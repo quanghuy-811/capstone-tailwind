@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>capstone-tailwind</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css" />
+
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="">
+    <!-- Header -->
+
+    <header class="container">
+      <nav class="bg-white lg:bg-inherit">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./image/logo.svg" class="h-8" alt="Flowbite Logo" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-normal items-center md:text-center p-4 lg:p-0 mt-4 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
+            >
+              <li class="nav__link">
+                <a href="#" aria-current="page">Home</a>
+              </li>
+
+              <li class="nav__link">
+                <a href="#">About</a>
+              </li>
+              <li class="nav__link">
+                <a href="#">Blog</a>
+              </li>
+              <li class="nav__link">
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-1 text-gray-900 rounded md:hover:bg-transparent hover:text-[#fe6019]"
+                >
+                  How It Works
+                </a>
+              </li>
+              <li class="nav__link group relative">
+                <p class="flex items-center justify-center">
+                  Pages
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5 mt-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </p>
+                <!-- Dropdown menu -->
+
+                <ul
+                  class="nav-dropdown-list hidden group-hover:block lg:invisible top-10 lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="career.html" class="block">Career</a>
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="career-single.html" class="">Career Single</a>
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="integrations.html" class="">Integrations</a>
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="integration-single.html" class=""
+                      >Integration Single</a
+                    >
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="pricing.html" class="">Pricing</a>
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="changelogs.html" class="">Changelogs</a>
+                  </li>
+                  <li class="mb-1 hover:text-[#fe6019]">
+                    <a href="terms-conditions.html" class=""
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-1 text-gray-900 rounded md:hover:bg-transparent hover:text-[#fe6019]"
+                  >Contact</a
+                >
+              </li>
+              <li class="lg:hidden my-2">
+                <button class="btn">Sign Up Now</button>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <button class="btn">Sign Up Now</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <section class="py-12">
+      <div class="container p-4">
+        <div class="grid__banner">
+          <div class="pr-12 pt-9">
+            <h1 class="title title__banner">
+              Scale design & dev operations with Avocode Enterprise
+            </h1>
+            <p class="mt-6 text__main">
+              A fully integrated suite of authentication & authoriz products,
+              Stytch’s platform removes the headache of.
+            </p>
+            <button class="btn mt-8" href="#">Download The Theme</button>
+          </div>
+          <div>
+            <img
+              class="w-full object-contain"
+              src="./image/banner-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <img
+          class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
+          src="./image/banner-shape.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- feature -->
+    <section class="relative">
+      <img
+        class="absolute top-0 left-0"
+        src="./image/feature-shape.svg"
+        alt=""
+      />
+      <div class="container p-4">
+        <div class="lg:flex justify-between text-center lg:text-start">
+          <div class="lg:basis-4/12">
+            <h2 class="title title__feature">
+              The Highlighting Part Of Our Solution
+            </h2>
+          </div>
+          <div class="mt-6 lg:basis-5/12 lg:mt-0">
+            <p class="text__main">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin .
+            </p>
+          </div>
+        </div>
+
+        <div class="grid__feature">
+          <div class="grid__feature__items">
+            <h3>Live Caption</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-1.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Smart Reply</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-2.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Sound Amplifier</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-3.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Gesture Navigation</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-4.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Dark Theme</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-5.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Privacy Controls</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-6.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Location Controls</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-7.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Security Updates</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-8.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Focus Mode</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-9.svg"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="grid__feature__items">
+            <h3>Family Link</h3>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="icon__feature">
+              <img
+                class="object-contain"
+                src="./image/feature-icon-10.svg"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section>
+      <div class="container py-24">
+        <!-- Tab -->
+        <div class="flex flex-wrap">
+          <div class="lg:order-2 lg:basis-7/12" id="default-styled-tab-content">
+            <div
+              class="hidden px-8 rounded-lg"
+              id="styled-profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <img class="w-full" src="./image/sells-by-country.png" alt="" />
+            </div>
+            <div
+              class="hidden p-4 rounded-lg bg-gray-50"
+              id="styled-dashboard"
+              role="tabpanel"
+              aria-labelledby="dashboard-tab"
+            >
+              <img class="w-full" src="./image/collaboration.png" alt="" />
+            </div>
+            <div
+              class="hidden p-4 rounded-lg bg-gray-50"
+              id="styled-settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <img class="w-full" src="./image/sells-by-country.png" alt="" />
+            </div>
+          </div>
+          <div class="my-4 px-4 lg:basis-5/12 lg:order-1">
+            <h2 class="title px-6">
+              Prevent failure from to impacting your reputation
+            </h2>
+            <p class="text__main px-6 mt-3">
+              Our platform helps you build secure onboarding authentication
+              experiences that retain and engage your users. We build the
+              infrastructure, you can.
+            </p>
+            <ul
+              class="mt-7 text-lg font-normal inline-block"
+              id="default-styled-tab"
+              data-tabs-toggle="#default-styled-tab-content"
+              data-tabs-active-classes="bg-[#fe601966]"
+              data-tabs-inactive-classes=""
+              role="tablist"
+            >
+              <li
+                class="tab__items"
+                id="profile-styled-tab"
+                data-tabs-target="#styled-profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                role="presentation"
+              >
+                <img
+                  class="mr-4 object-contain"
+                  src="./image/drop.svg"
+                  alt=""
+                />
+                <span>Habit building essential choose habit</span>
+              </li>
+              <li
+                aria-current="page"
+                class="tab__items"
+                id="dashboard-styled-tab"
+                data-tabs-target="#styled-dashboard"
+                type="button"
+                role="tab"
+                aria-controls="dashboard"
+                aria-selected="true"
+                role="presentation"
+              >
+                <img
+                  class="mr-4 object-contain"
+                  src="./image/brain.svg"
+                  alt=""
+                />
+                <span>Get an overview of Habit Calendars.</span>
+              </li>
+              <li
+                class="tab__items"
+                id="settings-styled-tab"
+                data-tabs-target="#styled-settings"
+                type="button"
+                role="tab"
+                aria-controls="settings"
+                aria-selected="false"
+                role="presentation"
+              >
+                <img class="mr-4" src="./image/timer.svg" alt="" />
+                <span>Start building with Habitify platform</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center">
+          <div class="relative right-10 lg:basis-7/12">
+            <img
+              class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
+              src="./image/shape.svg"
+              alt=""
+            />
+            <img
+              class="w-full object-contain"
+              src="./image/collaboration.png"
+            />
+          </div>
+          <div class="lg:basis-5/12 px-3 mt-6 lg:mt-0">
+            <h2 class="title">
+              Accept payments any country in this whole universe
+            </h2>
+            <p class="text__main mt-3">
+              Donec sollicitudin molestie malesda. Donec sollitudin molestie
+              malesuada. Mauris pellentesque nec, egestas non nisi. Cras
+              ultricies ligula sed
+            </p>
+            <ul class="mt-7 text-lg font-normal inline-block">
+              <li class="flex items-center py-1">
+                <img
+                  class="mr-4 object-contain"
+                  src="./image/checkmark-circle.svg"
+                  alt=""
+                />
+                <span>Supporting more than 119 country world</span>
+              </li>
+              <li class="flex items-center py-1">
+                <img
+                  class="mr-4 object-contain"
+                  src="./image/checkmark-circle.svg"
+                  alt=""
+                />
+                <span>Open transaction with more than currencies</span>
+              </li>
+              <li class="flex items-center py-1">
+                <img class="mr-4" src="./image/checkmark-circle.svg" alt="" />
+                <span>Customer Service with 79 languages</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center">
+          <div
+            class="lg:order-2 my-7 lg:my-0 pb-5 pr-9 lg:basis-7/12 overflow-hidden rounded-md relative mx-auto"
+          >
+            <!-- poster -->
+            <div class="iframe__poster z-10">
+              <img
+                class="object-contain w-full"
+                src="./image/intro-thumbnail.png"
+                alt=""
+              />
+              <button id="btnVideo" class="btn-video-play">
+                <img src="./image/play-icon.svg" alt="" />
+              </button>
+            </div>
+            <!-- video -->
+            <div
+              id="video"
+              class="w-full h-full absolute z-20 hidden left-0 top-0"
+            >
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/g3-VxLQO7do?si=qKFMQ5EgAj_XrBbX"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <!-- img -->
+            <img
+              class="absolute right-0 bottom-0 z-1"
+              src="./image/shape.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="lg:max-w-md my-4 px-4 lg:basis-5/12 lg:order-1">
+            <h2 class="title">Accountability that works for you</h2>
+            <p class="text__main mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin .
+            </p>
+            <button class="btn mt-6">Know About Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <section></section>
+    <section></section>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Script -->
+
+    <!-- Jquery -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+
+    <!-- npm install swiper -->
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
+
+    <!-- <script>
+      var swiper = new Swiper(".reviews-carousel", {
+        slidesPerView: 1,
+        loop: true,
+        // repeater: {
+        //   loop: , // Tạo bản sao 2 lần
+        // },
+        loopFillGroupWithBlank: true,
+        spaceBetween: 10, // Khoảng cách giữa các slide (px)
+        pagination: {
+          el: ".swiper-pagination", // Kích hoạt dấu chấm điều hướng
+          type: "bullets",
+          clickable: true, // Cho phép người dùng bấm vào các chấm điều hướng
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script> -->
+
+    <!-- flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- Play video -->
+    <script>
+      document.querySelector("#btnVideo").onclick = function () {
+        document.querySelector("#video").classList.remove("hidden");
+        document.querySelector("#btnVideo::after").classList.add("hidden");
+      };
+    </script>
+  </body>
+</html>
