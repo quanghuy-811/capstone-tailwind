@@ -16,6 +16,9 @@ module.exports = {
       zIndex: {
         1: "-1",
       },
+      backgroundImage: {
+        gradient: "linear-gradient(184.78deg, #fa709a 7.64%, #fee140 120.07%)",
+      },
     },
   },
 

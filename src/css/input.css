@@ -106,3 +106,29 @@
     box-shadow: 0 0 0 0 rgba(254, 96, 25, 0);
   }
 }
+
+/* reviews */
+
+.reviews-carousel {
+  @apply relative overflow-hidden;
+}
+
+.reviews__items {
+  @apply px-7 pb-10 text-center bg-white rounded-lg shadow-lg;
+}
+
+.review__avatar {
+  @apply w-24 h-24 bg-gradient mx-auto rounded-full p-0.5
+  translate-y-[-45px];
+}
+
+.swiper-pagination {
+  @apply bottom-0 !important;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-[#fe6019];
+}
+
+.swiper-pagination-bullet {
+  @apply w-4 h-4;
+}
