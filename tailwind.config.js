@@ -11,7 +11,7 @@ module.exports = {
       },
       fontFamily: {
         merri: ['"Merriweather"', "sans-serif"],
-        poppins: ['"Poppins', "sans-serif"],
+        sans: ["Poppins", "sans-serif"],
       },
       zIndex: {
         1: "-1",

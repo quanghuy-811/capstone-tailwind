@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply font-poppins;
+body {
+  @apply font-sans;
 }
 .container {
   @apply max-w-screen-xl;
@@ -67,11 +67,9 @@
   @apply flex items-center p-4 transition 
   rounded-md duration-300 cursor-pointer;
 }
-/*  */
 
 .iframe__poster {
   @apply bg-cover bg-no-repeat;
-  /* bg-cover bg-no-repeat */
 }
 
 .btn-video-play {
@@ -131,4 +129,31 @@
 
 .swiper-pagination-bullet {
   @apply w-4 h-4;
+}
+/* Footer */
+
+.footer h5 {
+  @apply mb-8 font-semibold text-lg;
+}
+
+.footer p {
+  @apply text-[#666];
+}
+.footer li a:hover {
+  @apply text-[#fe6019] underline;
+}
+.footer .socials ul li {
+  @apply mr-3 inline-block;
+}
+
+.footer .socials ul li a {
+  @apply inline-flex w-11 h-11 text-center rounded-full bg-white
+  justify-center items-center transition duration-500  ease-linear;
+}
+.footer .socials ul li:hover a {
+  @apply bg-[#fe6019];
+}
+
+.footer .socials li a svg {
+  @apply inline-block leading-[2.75rem];
 }
