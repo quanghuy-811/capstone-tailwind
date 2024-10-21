@@ -1,17 +1,13 @@
 {
   "devDependencies": {
-    "gh-pages": "^6.2.0",
     "tailwindcss": "^3.4.13"
   },
   "scripts": {
-    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "dependencies": {
     "flowbite": "^2.5.2",
     "jquery": "^3.7.1",
     "swiper": "^11.1.14"
-  },
-  "homepage": "https://quanghuy-811.github.io/capstone-tailwind-rhk5"
+  }
 }
